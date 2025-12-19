@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define W 400
-#define H 400
+#define W 800
+#define H 800
 
 typedef struct
 {
@@ -64,13 +64,13 @@ double df(double x)
 
 int main()
 {
-    FILE *fout = fopen("newton_xcom.ppm", "w");
+    FILE *fout = fopen("newton_xcom80040.ppm", "w");
     if (!fout)
     {
         return 1;
     }
 
-    const int MAX_ITERATIONS = 20;
+    const int MAX_ITERATIONS = 40;
     fprintf(fout, "P3\n%d %d\n255\n", W, H);
 
     complex root1 = {1.0, 0.0};
