@@ -12,7 +12,7 @@ typedef struct
 complex add(complex a, complex b)
 {
     double res;
-    return (complex){a.re + b.re, a.im + b.im}; // varför måste jag ha complex mellan a och b
+    return (complex){a.re + b.re, a.im + b.im}; 
 }
 
 complex sub(complex a, complex b)
@@ -27,7 +27,6 @@ complex mult(complex a, complex b)
         a.re * b.im + a.im * b.re};
 }
 
-// vet inte riktigt hur man deviderar två complexa tal, tagit från nätet
 complex divC(complex a, complex b)
 {
     double d = b.re * b.re + b.im * b.im;
